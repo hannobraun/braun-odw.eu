@@ -13,7 +13,6 @@ Access-Control-Allow-Origin = "*"
 from = "https://braun-odw.eu/*"
 to = "https://hanno.braun-odw.eu/:splat"
 status = 301
-force = true
 
 [[redirects]]
 from = "https://www.braun-odw.eu/*"
