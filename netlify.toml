@@ -1,0 +1,61 @@
+[build]
+publish = "public"
+
+[[headers]]
+for = "/.well-known/matrix/client"
+[headers.values]
+Access-Control-Allow-Origin = "*"
+
+
+# Active domains
+
+[[redirects]]
+from = "https://braun-odw.eu/*"
+to = "https://hanno.braun-odw.eu/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.braun-odw.eu/*"
+to = "https://hanno.braun-odw.eu/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://braun-odw-eu.netlify.app/*"
+to = "https://braun-odw.eu/:splat"
+status = 301
+force = true
+
+
+# Legacy domains
+
+[[redirects]]
+from = "https://hannobraun.de/"
+to = "https://hanno.braun-odw.eu/"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://hannobraun.de/*"
+to = "https://archive.braun-odw.eu/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.hannobraun.de/*"
+to = "https://hannobraun.de/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://madeby.hannobraun.de/*"
+to = "https://hanno.braun-odw.eu/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://made-by.braun-odw.eu/*"
+to = "https://hanno.braun-odw.eu/:splat"
+status = 301
+force = true
