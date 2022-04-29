@@ -16,7 +16,7 @@ status = 301
 
 [[redirects]]
 from = "https://www.braun-odw.eu/*"
-to = "https://hanno.braun-odw.eu/:splat"
+to = "https://braun-odw.eu/:splat"
 status = 301
 force = true
 
